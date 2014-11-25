@@ -15,6 +15,15 @@
 		D35258061A250EDC001A0920 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D35258041A250EDC001A0920 /* LaunchScreen.xib */; };
 		D35258121A250EDC001A0920 /* CoffeeFinderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D35258111A250EDC001A0920 /* CoffeeFinderTests.m */; };
 		D352581D1A2518C1001A0920 /* CoffeeFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D352581C1A2518C1001A0920 /* CoffeeFinder.m */; };
+		D35258251A253929001A0920 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35258241A253929001A0920 /* WatchKit.framework */; };
+		D352582C1A253929001A0920 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = D352582B1A253929001A0920 /* InterfaceController.m */; };
+		D352582F1A253929001A0920 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D352582E1A253929001A0920 /* NotificationController.m */; };
+		D35258311A253929001A0920 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D35258301A253929001A0920 /* Images.xcassets */; };
+		D35258351A253929001A0920 /* CoffeeFinder Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = D35258341A253929001A0920 /* CoffeeFinder Watch App.app */; };
+		D352583C1A253929001A0920 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D352583B1A253929001A0920 /* Interface.storyboard */; };
+		D352583E1A253929001A0920 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D352583D1A253929001A0920 /* Images.xcassets */; };
+		D35258411A253929001A0920 /* CoffeeFinder WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D35258221A253929001A0920 /* CoffeeFinder WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D35258491A253B14001A0920 /* CoffeeFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = D352581C1A2518C1001A0920 /* CoffeeFinder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +34,35 @@
 			remoteGlobalIDString = D35257F11A250EDC001A0920;
 			remoteInfo = CoffeeFinder;
 		};
+		D35258361A253929001A0920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D35257EA1A250EDC001A0920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35258331A253929001A0920;
+			remoteInfo = "CoffeeFinder Watch App";
+		};
+		D352583F1A253929001A0920 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D35257EA1A250EDC001A0920 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D35258211A253929001A0920;
+			remoteInfo = "CoffeeFinder WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D35258481A253929001A0920 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D35258411A253929001A0920 /* CoffeeFinder WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D35257F21A250EDC001A0920 /* CoffeeFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoffeeFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +80,19 @@
 		D35258111A250EDC001A0920 /* CoffeeFinderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoffeeFinderTests.m; sourceTree = "<group>"; };
 		D352581B1A2518C1001A0920 /* CoffeeFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoffeeFinder.h; sourceTree = "<group>"; };
 		D352581C1A2518C1001A0920 /* CoffeeFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoffeeFinder.m; sourceTree = "<group>"; };
+		D35258221A253929001A0920 /* CoffeeFinder WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoffeeFinder WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35258241A253929001A0920 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		D35258281A253929001A0920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35258291A253929001A0920 /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		D352582A1A253929001A0920 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		D352582B1A253929001A0920 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		D352582D1A253929001A0920 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		D352582E1A253929001A0920 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		D35258301A253929001A0920 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D35258341A253929001A0920 /* CoffeeFinder Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoffeeFinder Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D352583A1A253929001A0920 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D352583B1A253929001A0920 /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		D352583D1A253929001A0920 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +110,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D352581F1A253929001A0920 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35258251A253929001A0920 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +126,9 @@
 			children = (
 				D35257F41A250EDC001A0920 /* CoffeeFinder */,
 				D352580E1A250EDC001A0920 /* CoffeeFinderTests */,
+				D35258261A253929001A0920 /* CoffeeFinder WatchKit Extension */,
+				D35258381A253929001A0920 /* CoffeeFinder Watch App */,
+				D35258231A253929001A0920 /* Frameworks */,
 				D35257F31A250EDC001A0920 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +138,8 @@
 			children = (
 				D35257F21A250EDC001A0920 /* CoffeeFinder.app */,
 				D352580B1A250EDC001A0920 /* CoffeeFinderTests.xctest */,
+				D35258221A253929001A0920 /* CoffeeFinder WatchKit Extension.appex */,
+				D35258341A253929001A0920 /* CoffeeFinder Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +187,54 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D35258231A253929001A0920 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35258241A253929001A0920 /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35258261A253929001A0920 /* CoffeeFinder WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D352582A1A253929001A0920 /* InterfaceController.h */,
+				D352582B1A253929001A0920 /* InterfaceController.m */,
+				D352582D1A253929001A0920 /* NotificationController.h */,
+				D352582E1A253929001A0920 /* NotificationController.m */,
+				D35258301A253929001A0920 /* Images.xcassets */,
+				D35258271A253929001A0920 /* Supporting Files */,
+			);
+			path = "CoffeeFinder WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D35258271A253929001A0920 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D35258281A253929001A0920 /* Info.plist */,
+				D35258291A253929001A0920 /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D35258381A253929001A0920 /* CoffeeFinder Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				D352583B1A253929001A0920 /* Interface.storyboard */,
+				D352583D1A253929001A0920 /* Images.xcassets */,
+				D35258391A253929001A0920 /* Supporting Files */,
+			);
+			path = "CoffeeFinder Watch App";
+			sourceTree = "<group>";
+		};
+		D35258391A253929001A0920 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D352583A1A253929001A0920 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +245,12 @@
 				D35257EE1A250EDC001A0920 /* Sources */,
 				D35257EF1A250EDC001A0920 /* Frameworks */,
 				D35257F01A250EDC001A0920 /* Resources */,
+				D35258481A253929001A0920 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D35258401A253929001A0920 /* PBXTargetDependency */,
 			);
 			name = CoffeeFinder;
 			productName = CoffeeFinder;
@@ -162,6 +275,39 @@
 			productReference = D352580B1A250EDC001A0920 /* CoffeeFinderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		D35258211A253929001A0920 /* CoffeeFinder WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35258451A253929001A0920 /* Build configuration list for PBXNativeTarget "CoffeeFinder WatchKit Extension" */;
+			buildPhases = (
+				D352581E1A253929001A0920 /* Sources */,
+				D352581F1A253929001A0920 /* Frameworks */,
+				D35258201A253929001A0920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D35258371A253929001A0920 /* PBXTargetDependency */,
+			);
+			name = "CoffeeFinder WatchKit Extension";
+			productName = "CoffeeFinder WatchKit Extension";
+			productReference = D35258221A253929001A0920 /* CoffeeFinder WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		D35258331A253929001A0920 /* CoffeeFinder Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D35258421A253929001A0920 /* Build configuration list for PBXNativeTarget "CoffeeFinder Watch App" */;
+			buildPhases = (
+				D35258321A253929001A0920 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoffeeFinder Watch App";
+			productName = "CoffeeFinder Watch App";
+			productReference = D35258341A253929001A0920 /* CoffeeFinder Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,6 +323,12 @@
 					D352580A1A250EDC001A0920 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = D35257F11A250EDC001A0920;
+					};
+					D35258211A253929001A0920 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					D35258331A253929001A0920 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -195,6 +347,8 @@
 			targets = (
 				D35257F11A250EDC001A0920 /* CoffeeFinder */,
 				D352580A1A250EDC001A0920 /* CoffeeFinderTests */,
+				D35258211A253929001A0920 /* CoffeeFinder WatchKit Extension */,
+				D35258331A253929001A0920 /* CoffeeFinder Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -214,6 +368,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35258201A253929001A0920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35258311A253929001A0920 /* Images.xcassets in Resources */,
+				D35258351A253929001A0920 /* CoffeeFinder Watch App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D35258321A253929001A0920 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D352583C1A253929001A0920 /* Interface.storyboard in Resources */,
+				D352583E1A253929001A0920 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +411,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D352581E1A253929001A0920 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D35258491A253B14001A0920 /* CoffeeFinder.m in Sources */,
+				D352582F1A253929001A0920 /* NotificationController.m in Sources */,
+				D352582C1A253929001A0920 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -246,6 +428,16 @@
 			isa = PBXTargetDependency;
 			target = D35257F11A250EDC001A0920 /* CoffeeFinder */;
 			targetProxy = D352580C1A250EDC001A0920 /* PBXContainerItemProxy */;
+		};
+		D35258371A253929001A0920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D35258331A253929001A0920 /* CoffeeFinder Watch App */;
+			targetProxy = D35258361A253929001A0920 /* PBXContainerItemProxy */;
+		};
+		D35258401A253929001A0920 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D35258211A253929001A0920 /* CoffeeFinder WatchKit Extension */;
+			targetProxy = D352583F1A253929001A0920 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -399,6 +591,62 @@
 			};
 			name = Release;
 		};
+		D35258431A253929001A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = CoffeeFinder_WatchKit_Extension;
+				INFOPLIST_FILE = "CoffeeFinder Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		D35258441A253929001A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = CoffeeFinder_WatchKit_Extension;
+				INFOPLIST_FILE = "CoffeeFinder Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		D35258461A253929001A0920 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoffeeFinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D35258471A253929001A0920 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "CoffeeFinder WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -424,6 +672,22 @@
 			buildConfigurations = (
 				D35258191A250EDC001A0920 /* Debug */,
 				D352581A1A250EDC001A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D35258421A253929001A0920 /* Build configuration list for PBXNativeTarget "CoffeeFinder Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35258431A253929001A0920 /* Debug */,
+				D35258441A253929001A0920 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D35258451A253929001A0920 /* Build configuration list for PBXNativeTarget "CoffeeFinder WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35258461A253929001A0920 /* Debug */,
+				D35258471A253929001A0920 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
