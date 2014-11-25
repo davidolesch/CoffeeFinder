@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cur-Q1-HFE">
+                                <rect key="frame" x="183" y="193" width="234" height="214"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoffeeFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNy-CK-1Mx">
+                                        <rect key="frame" x="20" y="20" width="194" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="TPS-IY-lGf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 miles to Starbucks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ueq-Bo-8cN">
+                                        <rect key="frame" x="5" y="176" width="224" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="k0J-Sp-m3Z"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nx7-bF-Tln">
+                                        <rect key="frame" x="43" y="104" width="149" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="mUh-gI-ZYK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Locate nearby coffee">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchedLocateNearbyCoffeeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="a9Z-Sb-6KB"/>
+                                        </connections>
+                                    </button>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="kUr-W9-eOW">
+                                        <rect key="frame" x="107" y="177" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nx7-bF-Tln" firstAttribute="top" secondItem="PNy-CK-1Mx" secondAttribute="bottom" constant="40" id="9ol-Yr-qOP"/>
+                                    <constraint firstItem="PNy-CK-1Mx" firstAttribute="leading" secondItem="cur-Q1-HFE" secondAttribute="leading" constant="20" id="Cis-se-BPR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ueq-Bo-8cN" secondAttribute="trailing" constant="5" id="Gxy-vw-w2e"/>
+                                    <constraint firstAttribute="trailing" secondItem="nx7-bF-Tln" secondAttribute="trailing" constant="42" id="I7I-8r-lxK"/>
+                                    <constraint firstItem="PNy-CK-1Mx" firstAttribute="top" secondItem="cur-Q1-HFE" secondAttribute="top" constant="20" id="JAf-Ug-nfC"/>
+                                    <constraint firstItem="nx7-bF-Tln" firstAttribute="leading" secondItem="cur-Q1-HFE" secondAttribute="leading" constant="43" id="aSn-hc-BwM"/>
+                                    <constraint firstAttribute="trailing" secondItem="PNy-CK-1Mx" secondAttribute="trailing" constant="20" id="aaP-m4-Gk4"/>
+                                    <constraint firstItem="Ueq-Bo-8cN" firstAttribute="top" secondItem="nx7-bF-Tln" secondAttribute="bottom" constant="39" id="jtR-YW-EOl"/>
+                                    <constraint firstAttribute="width" constant="234" id="lJC-6a-7n6"/>
+                                    <constraint firstAttribute="height" constant="214" id="ov5-EA-Uzs"/>
+                                    <constraint firstItem="kUr-W9-eOW" firstAttribute="bottom" secondItem="Ueq-Bo-8cN" secondAttribute="bottom" id="tej-fH-e6e"/>
+                                    <constraint firstItem="Ueq-Bo-8cN" firstAttribute="leading" secondItem="cur-Q1-HFE" secondAttribute="leading" constant="5" id="wyT-M4-vYF"/>
+                                    <constraint firstItem="kUr-W9-eOW" firstAttribute="centerX" secondItem="Ueq-Bo-8cN" secondAttribute="centerX" id="yqO-za-0rJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="cur-Q1-HFE" secondAttribute="centerX" id="E5f-zd-9a4"/>
+                            <constraint firstAttribute="centerY" secondItem="cur-Q1-HFE" secondAttribute="centerY" id="oiK-Of-bIS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationDescriptionLabel" destination="Ueq-Bo-8cN" id="HYh-rR-Zvf"/>
+                        <outlet property="searchActivityIndicator" destination="kUr-W9-eOW" id="xkD-4Y-Vd8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
