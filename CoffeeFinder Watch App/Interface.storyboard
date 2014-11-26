@@ -13,19 +13,22 @@
                         <label width="1" alignment="left" text="CoffeeFinder" textAlignment="center" id="ulx-qQ-lHP">
                             <fontDescription key="font" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
                         </label>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="CEB-kA-bVL">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <map alignment="left" id="I8s-b8-4lP"/>
                         <button width="1" alignment="center" title="Locate nearby coffee" id="aKU-R5-b1f">
                             <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                             <connections>
                                 <action selector="touchedLocateNearbyCoffee" destination="AgC-eL-Hgc" id="hY3-9s-7EE"/>
                             </connections>
                         </button>
-                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="CEB-kA-bVL">
-                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
-                        </label>
                     </items>
                     <connections>
+                        <outlet property="headerLabel" destination="ulx-qQ-lHP" id="Ued-GG-Mqv"/>
                         <outlet property="locateNearbyCoffeeButton" destination="aKU-R5-b1f" id="Sbq-cZ-EzT"/>
                         <outlet property="locationDescriptionLabel" destination="CEB-kA-bVL" id="LGc-y0-yGm"/>
+                        <outlet property="locationMap" destination="I8s-b8-4lP" id="wWn-Vk-qcT"/>
                     </connections>
                 </controller>
             </objects>
