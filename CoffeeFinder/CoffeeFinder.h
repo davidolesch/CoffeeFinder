@@ -19,6 +19,6 @@
 
 @interface CoffeeFinder : NSObject
 
-+ (void)findCoffeeNear:(CLLocationCoordinate2D)userLocation withCompletionBlock:(void (^)(NSString *placeName))completionBlock;
++ (void)findCoffeeNear:(CLLocationCoordinate2D)userLocation withCompletionBlock:(void (^)(MKMapItem *coffeeItem))completionBlock;
 
 @end

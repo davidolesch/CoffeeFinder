@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,42 +12,65 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2014 David Olesch. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-xW-0ye">
-                    <rect key="frame" x="20" y="439" width="441" height="21"/>
+                    <rect key="frame" x="20" y="439.5" width="441" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mYQ-zC-DUZ">
-                    <rect key="frame" x="123" y="133" width="234" height="214"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Orw-tZ-fKu">
+                    <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoffeeFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkn-uK-9mK">
-                            <rect key="frame" x="20" y="20" width="194" height="44"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tT1-3L-1Kg">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="240"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL7-1C-Jl9">
+                                    <rect key="frame" x="123" y="13" width="234" height="214"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CoffeeFinder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tvZ-YW-J9H">
+                                            <rect key="frame" x="20" y="20" width="194" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="3aK-ay-ZCN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="tvZ-YW-J9H" firstAttribute="leading" secondItem="OL7-1C-Jl9" secondAttribute="leading" constant="20" id="1GC-QI-FET"/>
+                                        <constraint firstAttribute="width" constant="234" id="3bo-ac-DrE"/>
+                                        <constraint firstAttribute="centerX" secondItem="tvZ-YW-J9H" secondAttribute="centerX" id="L42-Rv-yAL"/>
+                                        <constraint firstAttribute="height" constant="214" id="jSG-z9-Sdh"/>
+                                        <constraint firstItem="tvZ-YW-J9H" firstAttribute="top" secondItem="OL7-1C-Jl9" secondAttribute="top" constant="20" id="vQM-89-0Ae"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="44" id="sqp-4S-ZN1"/>
+                                <constraint firstAttribute="centerY" secondItem="OL7-1C-Jl9" secondAttribute="centerY" id="0JL-mK-WSi"/>
+                                <constraint firstAttribute="centerX" secondItem="OL7-1C-Jl9" secondAttribute="centerX" id="rDw-Pv-sdu"/>
                             </constraints>
-                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="32"/>
-                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="Tkn-uK-9mK" firstAttribute="top" secondItem="mYQ-zC-DUZ" secondAttribute="top" constant="20" id="2L9-3a-2W0"/>
-                        <constraint firstAttribute="height" constant="214" id="9Qa-90-lKo"/>
-                        <constraint firstAttribute="width" constant="234" id="Fh6-lP-R8S"/>
-                        <constraint firstItem="Tkn-uK-9mK" firstAttribute="leading" secondItem="mYQ-zC-DUZ" secondAttribute="leading" constant="20" id="On1-YH-H3t"/>
-                        <constraint firstAttribute="trailing" secondItem="Tkn-uK-9mK" secondAttribute="trailing" constant="20" id="T5W-W1-Cbq"/>
+                        <constraint firstItem="tT1-3L-1Kg" firstAttribute="top" secondItem="Orw-tZ-fKu" secondAttribute="top" id="4jd-kD-J4Q"/>
+                        <constraint firstItem="tT1-3L-1Kg" firstAttribute="height" secondItem="Orw-tZ-fKu" secondAttribute="height" multiplier="0.5" id="Igt-QJ-nlT"/>
+                        <constraint firstAttribute="centerX" secondItem="tT1-3L-1Kg" secondAttribute="centerX" id="Wtv-BB-PtA"/>
+                        <constraint firstItem="tT1-3L-1Kg" firstAttribute="leading" secondItem="Orw-tZ-fKu" secondAttribute="leading" id="lQN-62-T8R"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="mYQ-zC-DUZ" firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="6M3-X3-zpO"/>
-                <constraint firstItem="8ie-xW-0ye" firstAttribute="top" secondItem="mYQ-zC-DUZ" secondAttribute="bottom" constant="92" id="8tj-nY-Ugf"/>
-                <constraint firstItem="mYQ-zC-DUZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IQZ-XY-SoR"/>
+                <constraint firstAttribute="trailing" secondItem="Orw-tZ-fKu" secondAttribute="trailing" id="JYc-XG-731"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
+                <constraint firstItem="Orw-tZ-fKu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TbN-WK-Dib"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
+                <constraint firstItem="Orw-tZ-fKu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mef-4G-EBY"/>
+                <constraint firstAttribute="bottom" secondItem="Orw-tZ-fKu" secondAttribute="bottom" id="ptI-Q3-0Kf"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

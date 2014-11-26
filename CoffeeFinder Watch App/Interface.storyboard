@@ -19,7 +19,9 @@
                                 <action selector="touchedLocateNearbyCoffee" destination="AgC-eL-Hgc" id="hY3-9s-7EE"/>
                             </connections>
                         </button>
-                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="CEB-kA-bVL"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" numberOfLines="2" id="CEB-kA-bVL">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
                     </items>
                     <connections>
                         <outlet property="locateNearbyCoffeeButton" destination="aKU-R5-b1f" id="Sbq-cZ-EzT"/>

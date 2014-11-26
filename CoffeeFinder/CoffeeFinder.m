@@ -10,7 +10,7 @@
 
 @implementation CoffeeFinder
 
-+ (void)findCoffeeNear:(CLLocationCoordinate2D)userLocation withCompletionBlock:(void (^)(NSString *))completionBlock
++ (void)findCoffeeNear:(CLLocationCoordinate2D)userLocation withCompletionBlock:(void (^)(MKMapItem *coffeeItem))completionBlock
 {
     // Create request
     MKLocalSearchRequest *request = [[MKLocalSearchRequest alloc] init];
@@ -23,7 +23,7 @@
         NSUInteger randomIndex = arc4random_uniform((int)response.mapItems.count);
         MKMapItem *randomItem = [response.mapItems objectAtIndex:randomIndex];
         if (completionBlock) {
-            completionBlock([randomItem name]);
+            completionBlock(randomItem);
         }
     }];
 }

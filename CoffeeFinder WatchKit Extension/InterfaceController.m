@@ -46,8 +46,8 @@
 {
     [self.locationDescriptionLabel setText:@"Loading.."];
     [self.locateNearbyCoffeeButton setEnabled:NO];
-    [CoffeeFinder findCoffeeNear:CLLocationCoordinate2DMake(userLatitude, userLongitude) withCompletionBlock:^(NSString *placeName) {
-        [self.locationDescriptionLabel setText:placeName];
+    [CoffeeFinder findCoffeeNear:CLLocationCoordinate2DMake(userLatitude, userLongitude) withCompletionBlock:^(MKMapItem *coffeeItem) {
+        [self.locationDescriptionLabel setText:coffeeItem.name];
         [self.locateNearbyCoffeeButton setEnabled:YES];
     }];
 }
