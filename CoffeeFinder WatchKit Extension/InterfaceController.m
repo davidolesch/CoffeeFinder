@@ -34,6 +34,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     NSLog(@"%@ will activate", self);
+    //[self locateNearbyCoffee];
 }
 
 - (void)didDeactivate {
@@ -41,13 +42,18 @@
     NSLog(@"%@ did deactivate", self);
 }
 
-- (IBAction)touchedLocateNearbyCoffee {
+- (void)locateNearbyCoffee
+{
     [self.locationDescriptionLabel setText:@"Loading.."];
     [self.locateNearbyCoffeeButton setEnabled:NO];
     [CoffeeFinder findCoffeeNear:CLLocationCoordinate2DMake(userLatitude, userLongitude) withCompletionBlock:^(NSString *placeName) {
         [self.locationDescriptionLabel setText:placeName];
         [self.locateNearbyCoffeeButton setEnabled:YES];
     }];
+}
+
+- (IBAction)touchedLocateNearbyCoffee {
+    [self locateNearbyCoffee];
 }
 
 @end
